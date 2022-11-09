@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom"; // to navigate to other page
+import { NavLink, useNavigate } from "react-router-dom"; // to navigate to other page
 import { Input } from "antd"; // ant design input
 import { FaArrowRight } from "react-icons/fa"; // react-icons icon
 
@@ -21,13 +21,13 @@ function Login() {
   const URL = `${BASE_URL}/apiauth/local`;
   const navigate = useNavigate();
 
-  useEffect(() => {
-    if (validate == true) {
-      setTimeout(() => {
-        navigate("/");
-      }, 2000);
-    }
-  }, [validate]);
+  // useEffect(() => {
+  //   if (validate == true) {
+  //     setTimeout(() => {
+  //       navigate("/");
+  //     }, 2000);
+  //   }
+  // }, [validate]);
 
   const handleInput = (e) => {
     setLogin({
@@ -97,8 +97,8 @@ function Login() {
                 required
               />
             </article>
-
-            <button className="login-button">
+<NavLink to='/'>
+<button className="login-button">
               {loading ? (
                 "loading..."
               ) : (
@@ -110,6 +110,8 @@ function Login() {
                 </>
               )}
             </button>
+</NavLink>
+            
           </article>
         </form>
       </article>

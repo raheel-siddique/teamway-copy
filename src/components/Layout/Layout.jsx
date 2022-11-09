@@ -83,7 +83,7 @@ const Navbar = () => {
 
   return (
     <NavbarStyle>
-      <h2 className="page-title">Dashboard</h2>
+      <h2 className="page-title">dashboard</h2>
       <figure className="action-button">
         <picture className="profile-image-wrapper">
           <img

@@ -1,0 +1,299 @@
+
+  /* left content box */
+.main_container{
+    background-image: url(../../assets/pexels-valdemaras-d-1647962.jpg);
+
+    /* Full height */
+    height: 100vh; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.left_column{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    padding-left: 10%;
+    padding-right: 10%;
+
+   
+
+}
+.heading_banner{
+    /* position: absolute; */
+width: 362px;
+height: 49px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+/* line-height: 29px; */
+/* identical to box height */
+text-transform: capitalize;
+
+
+color: #FFFFFF;
+}
+.sec_heading{
+    /* position: absolute; */
+    width: 395px;
+    height: 58px;
+font-size: 20px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    /* font-size: 16px; */
+    line-height: 19px;
+text-transform: capitalize;
+    
+    color: #FFFFFF;
+    
+}
+.para_description{
+    /* position: absolute; */
+width: 451px;
+height: 80px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 17px;
+text-align: justify;
+text-transform: capitalize;
+
+
+color: #FFFFFF;
+}
+.intsgram_icon{
+  font-size: 25px;
+ color: #FFFFFF;
+
+}
+.link_webiste{
+    /* position: absolute; */
+    width: 128px; 
+/* height: 25px; */
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 15px;
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;
+    
+}
+.icons_banner{
+    display: flex;
+    column-gap: 10px;
+    height: 40px;
+}
+
+
+/* right login div */
+
+.login_Box{
+    background-color: #FFFFFF;
+    height: 440px;
+    width: 350px;
+
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center;
+    justify-content: center;
+    align-content: center; */
+   /* margin: auto; */
+  /* margin-top: 50%; */
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+
+}
+.login_Box_main{
+
+    display: flex;
+    /* flex-direction: column;  */
+   align-items: center;
+    justify-content: center;
+    /* align-content: center; */
+   /* margin: auto; */
+    /* padding-left: 10%;
+    padding-right: 10%; */
+}
+
+.footer_box{
+    display: flex;
+    justify-content: space-between;
+}
+.form_head{
+   
+width: 154px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+text-transform: capitalize;
+
+color: #161719;
+}
+.main_div_form_heading{
+/* height: 39px; */
+
+}
+
+.form_para{
+    
+    width: 229px;
+    height: 70px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: justify;
+    
+    color: #161719;
+text-transform: capitalize;
+    
+}
+.input_email{
+
+box-sizing: border-box;
+
+/* Auto layout */
+
+/* display: flex; */
+/* flex-direction: row; */
+/* align-items: flex-start; */
+padding: 12px;
+/* gap: 10px; */
+
+/* position: relative; */
+width: 282px;
+height: 39px;
+
+background: #E8E8E8;
+border: 1px solid #C0C0C0;
+border-radius: 2px;
+}
+.input_password{
+    box-sizing: border-box;
+
+/* Auto layout */
+
+/* display: flex; */
+/* flex-direction: row; */
+/* align-items: flex-start; */
+padding: 12px;
+/* gap: 10px; */
+
+/* position: relative; */
+width: 282px;
+height: 39px;
+
+background: #E8E8E8;
+border: 1px solid #C0C0C0;
+border-radius: 2px;
+}
+
+::placeholder{
+    /* width: 30px; */
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+
+
+color: #A7A7A7;
+
+}
+.para_forget_password{
+    /* position: absolute; */
+/* width: 101px; */
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+
+text-align: right;
+
+color: #161719;
+text-transform: capitalize;
+
+
+}
+.btn_login{
+ 
+padding: 10px;
+
+width: 282px;
+height: 39px;
+background: #3C9AEF;
+border-radius: 2px;
+color: #FFFFFF;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 15px;
+text-transform: capitalize;
+
+}
+
+.text_footer{
+    /* position: absolute; */
+/* width: 279px; */
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+
+text-transform: capitalize;
+
+color: #161719;
+}
+.text_footer_account{
+height: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+
+text-decoration-line: underline;
+
+color: #0066FF;
+text-transform: capitalize;
+}

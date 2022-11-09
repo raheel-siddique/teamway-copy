@@ -22,6 +22,7 @@ import TaskProvider from "./context/task/taskContext";
 
 import THEME from "./styles/theme";
 import GlobalStyle from "./styles/globalStyle";
+import NewLogin from "./pages/Login/NewLogin";
 
 function App() {
   return (
@@ -30,9 +31,11 @@ function App() {
         <GlobalStyle />
         <Routes>
           <Route element={<PublicRoute />}>
-            <Route path="/login" exact element={<Login />} />
+            {/* <Route path="/login" exact element={<Login />} /> */}
+            <Route path="/login" exact element={<NewLogin />} />
+
           </Route>
-          <Route element={<PrivateRoute />}>
+          {/* <Route element={<PrivateRoute />}> */}
             <Route element={<DashboardProvider />}>
               <Route element={<LayoutProvider />}>
                 <Route path="/" element={<Layout />}>
@@ -72,7 +75,7 @@ function App() {
                 </Route>
               </Route>
             </Route>
-          </Route>
+          {/* </Route> */}
         </Routes>
       </ThemeProvider>
     </Router>
