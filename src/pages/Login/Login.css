@@ -152,10 +152,7 @@ text-transform: capitalize;
 
 color: #161719;
 }
-.main_div_form_heading{
-/* height: 39px; */
 
-}
 
 .form_para{
     
@@ -237,9 +234,10 @@ font-family: 'Inter';
 font-style: normal;
 font-weight: 500;
 font-size: 12px;
-line-height: 15px;
+/* line-height: 15px; */
 /* identical to box height */
-
+position: relative;
+bottom: 20px;
 text-align: right;
 
 color: #161719;
