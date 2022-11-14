@@ -23,6 +23,7 @@ import TaskProvider from "./context/task/taskContext";
 import THEME from "./styles/theme";
 import GlobalStyle from "./styles/globalStyle";
 import NewLogin from "./pages/Login/NewLogin";
+import Signup from "./pages/signup/Signup";
 
 function App() {
   return (
@@ -33,6 +34,8 @@ function App() {
           <Route element={<PublicRoute />}>
             {/* <Route path="/login" exact element={<Login />} /> */}
             <Route path="/login" exact element={<NewLogin />} />
+            <Route path="/register" exact element={<Signup />} />
+
 
           </Route>
           {/* <Route element={<PrivateRoute />}> */}

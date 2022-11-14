@@ -1,0 +1,56 @@
+.main_container{
+    background-image: url(../../assets/pexels-valdemaras-d-1647962.jpg);
+
+    /* Full height */
+    height: 100vh; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main_signup_div{
+    width: 789px;
+height: 100vh;
+
+background: #FFFFFF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+/* display: flex;
+justify-content: center; */
+/* align-items: center; */
+/* align-content: center; */
+margin: auto;
+padding-top: 60px;
+padding-bottom: 60px;
+padding-left: 80px;
+overflow-y: scroll;
+/* padding-right: 30px; */
+}
+/* .avatar_img{
+    background-image: url(../../assets/pexels-valdemaras-d-1647962.jpg);
+    width: 40px;
+    height: 40px;
+
+} */
+.img_avatar{
+    width: 50px;
+height: 50px;
+
+border-radius: 5px;
+}
+.head_first_col{
+    /* width: 103px; */
+    margin-bottom: 10px;
+height: 12px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 12px;
+
+color: #000000;
+}
+/* ::placeholder{
+    color: red;
+} */

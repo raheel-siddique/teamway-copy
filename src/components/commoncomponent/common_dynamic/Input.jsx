@@ -1,17 +1,38 @@
 import React from "react";
-import { Field, ErrorMessage } from "formik";
+// import { Field, ErrorMessage } from "formik";
 import { Form, Input } from "antd";
 
 function InputFld(props) {
-  const { disabled, label, name, formik, ...rest } = props;
+  const { disabled, label, name, formik, type, ...rest } = props;
   return (
     <>
-     <Form.Item>
-    <Field as={Input} id={name} name={name} {...rest} disabled={disabled}  />
-    </Form.Item>
-      <div style={{color:'red', position:"relative", bottom:25, fontSize:12, fontFamily:'sans-serif'}}>
-        <ErrorMessage name={name} />
-      </div>
+      {type !== "password" ? (
+        <Form.Item name={name} rules={[
+          {required:true,
+            message:`please enter your ${name}`,
+            
+            
+          },
+          {type:name==='email'? 'email':"", message:'please enter a valid email' }
+        ]}
+        
+        hasFeedback
+        >
+          <Input id={name} name={name} {...rest} disabled={disabled} />
+        </Form.Item>
+      ) : (
+        <Form.Item name={name} rules={[
+          {required:true,
+            message:`please enter your ${name}`
+          },
+          {min:6,message:'must be atleast 6 charachters'}
+
+        ]}>
+          <Input.Password id={name} name={name} {...rest} disabled={disabled} />
+        </Form.Item>
+      )}
+
+      
     </>
   );
 }

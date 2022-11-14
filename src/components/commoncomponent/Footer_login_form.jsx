@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 
 const Footer_login_form=()=>{
@@ -6,7 +7,10 @@ const Footer_login_form=()=>{
         <>
          <div className="footer_box">
             <p className="text_footer">dont have an account?</p>
-            <p className="text_footer_account">Create Account</p>
+            <NavLink to='/register' >
+            <p className="text_footer_account" style={{cursor:"pointer"}}>Create Account</p>
+
+            </NavLink>
           </div>
 
         </>

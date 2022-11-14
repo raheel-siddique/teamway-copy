@@ -7,7 +7,7 @@ function FormikControl(props) {
   const { control, ...rest } = props;
   switch (control) {
     case "input":
-      return <InputFld {...rest} />;
+    return <InputFld {...rest} />;
     case "textarea":
       return "";
     case "select":

@@ -1,31 +1,20 @@
 import React from "react";
 
-import { Button, Col } from "antd";
-import { Formik } from "formik";
+import { Button, Col, Form } from "antd";
+// import { Form, Formik } from "formik";
 import FormikControl from "../../components/commoncomponent/common_dynamic/FormikControl";
-import * as Yup from "yup";
+// import * as Yup from "yup";
 
 import LOGINFIELDDATA from "./loginfielddata";
 import Header_Login_Form from "../../components/commoncomponent/Header_login_form";
 import Footer_login_form from "../../components/commoncomponent/Footer_login_form";
 
 const NewLoginContent = () => {
-  const initialValues = {
-    email: "",
-    password: "",
-  };
 
-  const validationSchema = Yup.object().shape({
-    email: Yup.string()
-      .email("Wrong email format")
-      .required("Email is required"),
 
-    password: Yup.string().required("password is required"),
-  });
-
-  const onSubmit = (values) => {
-    console.log(values);
-  };
+  const submitForm=(values)=>{
+  console.log(values)
+  }
   return (
     <>
       <Col
@@ -38,14 +27,11 @@ const NewLoginContent = () => {
         className="login_Box_main"
       >
         <Col className="login_Box">
-          <Header_Login_Form />
+          <Header_Login_Form heading="Login Your Account" description='Welcome to Teamway, please put your credentials here to start using this App
+              ' />
           <div className="form">
-            <Formik
-              initialValues={initialValues}
-              validationSchema={validationSchema}
-              onSubmit={onSubmit}
-            >
-              {(formik) => (
+        
+                <Form onFinish={submitForm}>
                 <>
                   {LOGINFIELDDATA.map((fields) => {
                     return (
@@ -54,21 +40,30 @@ const NewLoginContent = () => {
                           control={fields.control}
                           type={fields.type}
                           name={fields.name}
-                          formik={formik}
+                          // formik={formik}
                           placeholder={fields.placeholder}
+                          style={{
+                            backgroundColor: "whitesmoke",
+                            boxShadow:
+                              "0px 3px 3px rgba(0, 0, 0, 0.25)",
+                            
+                          } }
+                          
                         />
                       </>
                     );
                   })}
 
                   <p className="para_forget_password">forget password?</p>
-
-                  <Button className="btn_login" block htmlType="submit">
+             <Form.Item>
+             <Button className="btn_login" block htmlType="submit">
                     Login
                   </Button>
+             </Form.Item>
+                 
                 </>
-              )}
-            </Formik>
+                </Form>
+           
           </div>
           <br />
         <Footer_login_form />
