@@ -13,7 +13,10 @@ function InputFld(props) {
             
             
           },
-          {type:name==='email'? 'email':"", message:'please enter a valid email' }
+          {type:name==='email'? 'email':"", message:'please enter a valid email' },
+          {min:name==='otp'? 6:"", message:'must be atleast 6 chacters'},
+          {max:name==='otp'? 6:"", message:'cant go more than 6 chacters'}
+
         ]}
         
         hasFeedback

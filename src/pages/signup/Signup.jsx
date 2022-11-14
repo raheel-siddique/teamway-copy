@@ -306,6 +306,7 @@ const Signup = () => {
                         );
                       })}
                       <Button
+                      href="/otp"
                         style={{
                           width: 273,
                           fontFamily: "Inter",

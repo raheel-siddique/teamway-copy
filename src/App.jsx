@@ -24,6 +24,7 @@ import THEME from "./styles/theme";
 import GlobalStyle from "./styles/globalStyle";
 import NewLogin from "./pages/Login/NewLogin";
 import Signup from "./pages/signup/Signup";
+import Otp from "./pages/otp/Otp";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
             {/* <Route path="/login" exact element={<Login />} /> */}
             <Route path="/login" exact element={<NewLogin />} />
             <Route path="/register" exact element={<Signup />} />
+            <Route path='/otp' exact element={<Otp/>}  />
 
 
           </Route>

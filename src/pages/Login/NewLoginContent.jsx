@@ -1,9 +1,7 @@
 import React from "react";
 
 import { Button, Col, Form } from "antd";
-// import { Form, Formik } from "formik";
 import FormikControl from "../../components/commoncomponent/common_dynamic/FormikControl";
-// import * as Yup from "yup";
 
 import LOGINFIELDDATA from "./loginfielddata";
 import Header_Login_Form from "../../components/commoncomponent/Header_login_form";
@@ -18,7 +16,7 @@ const NewLoginContent = () => {
   return (
     <>
       <Col
-        span={12}
+        span={24}
         xs={24}
         sm={24}
         md={12}
@@ -31,7 +29,10 @@ const NewLoginContent = () => {
               ' />
           <div className="form">
         
-                <Form onFinish={submitForm}>
+                <Form onFinish={submitForm}
+                // labelCol={{ span: 8 }}
+                // wrapperCol={{ span: 16 }}
+                >
                 <>
                   {LOGINFIELDDATA.map((fields) => {
                     return (
